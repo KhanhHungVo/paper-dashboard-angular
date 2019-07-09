@@ -1,12 +1,30 @@
 <div class="container-fluid">
-   <h1>Hello angular</h1>
-   
-<!-- <form method="post" #loginForm="ngForm">
-    <label for="username">Username</label>
-    <input id="username" name="username" type="text" />
-    <label for="password">Password</label>
-    <input id="password" name="password" type="password" />
-    <button type="submit" [disabled]="!loginForm.form.valid" (click)="login()">Log me in</button>
-</form> -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="header">
+                    <h4 class="title">Striped Table</h4>
+                    <p class="category">Here is a subtitle for this table</p>
+                </div>
+                <div class="content table-responsive table-full-width">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th *ngFor="let cell of testData2.headerRow">{{ cell }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let row of testData2.dataRows">
+                                <td *ngFor="let cell of row">{{cell}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
+                </div>
+            </div>
+        </div>
+
+
+        
+    </div>
 </div>
